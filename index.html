@@ -1,18 +1,264 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>PureCodeBase</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Würthenberger - Mobile Games & Apps</title>
+    <meta name="description" content="Mobile games and apps by Nico Würthenberger. Download my games on iOS and Android.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #e94560;
+            margin: 50px 0 30px 0;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        /* App Cards */
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .app-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.2);
+        }
+
+        .app-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .app-card h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+
+        .app-card .app-genre {
+            color: #e94560;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .app-card p {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .app-badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .app-badge {
+            background: rgba(233, 69, 96, 0.2);
+            color: #ff6b6b;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+        .store-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .store-link {
+            background: #ffffff;
+            color: #1a1a2e;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: transform 0.3s;
+        }
+
+        .store-link:hover {
+            transform: scale(1.05);
+        }
+
+        .store-link.coming-soon {
+            background: rgba(255,255,255,0.1);
+            color: #666;
+            cursor: default;
+        }
+
+        /* Coming Soon Card */
+        .app-card.coming-soon {
+            border-style: dashed;
+            opacity: 0.7;
+        }
+
+        .app-card.coming-soon:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* About Section */
+        .about-section {
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .about-section p {
+            color: #a0a0a0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 60px;
+        }
+
+        footer nav {
+            margin-bottom: 20px;
+        }
+
+        footer a {
+            color: #a0a0a0;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #e94560;
+        }
+
+        .copyright {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <h1>PureCodeBase</h1>
-  <p>Entwicklung und Betrieb mobiler Applikationen.</p>
+    <div class="container">
+        <header>
+            <div class="logo">🎮</div>
+            <h1>Nico Würthenberger</h1>
+            <p class="tagline">Mobile Games & Apps</p>
+        </header>
 
-  <p>
-    <a href="impressum.html">Impressum</a> |
-    <a href="datenschutz.html">Datenschutz</a>
-  </p>
+        <main>
+            <h2>My Apps</h2>
 
-  <p>Kontakt: <a href="mailto:purecodebase@gmail.com">purecodebase@gmail.com</a></p>
+            <div class="apps-grid">
+                <!-- Dice Tap Tower -->
+                <div class="app-card">
+                    <div class="app-icon">🎲</div>
+                    <h3>Dice Tap Tower</h3>
+                    <p class="app-genre">Puzzle / Arcade</p>
+                    <p>Physics-based stacking game. Roll dice, stack them, trigger fusions and climb the leaderboard!</p>
+                    <div class="app-badges">
+                        <span class="app-badge">Physics</span>
+                        <span class="app-badge">Casual</span>
+                        <span class="app-badge">Free</span>
+                    </div>
+                    <div class="store-links">
+                        <a href="#" class="store-link coming-soon">Coming Soon</a>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future app -->
+                <div class="app-card coming-soon">
+                    <div class="app-icon">🚀</div>
+                    <h3>More Coming Soon</h3>
+                    <p class="app-genre">Stay Tuned</p>
+                    <p>I´m working on exciting new games. Follow me for updates!</p>
+                    <div class="store-links">
+                        <span class="store-link coming-soon">In Development</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="about-section">
+                <h2>About</h2>
+                <p>Independent developer creating fun and engaging mobile games. All my games are designed with passion and attention to detail.</p>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="support.html">Support</a>
+            </nav>
+            <p class="copyright">© 2025 Nico Würthenberger. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
