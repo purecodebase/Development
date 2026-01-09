@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - PureCodeBase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #e94560;
+        }
+
+        h2 {
+            color: #e94560;
+            margin: 40px 0 20px 0;
+            font-size: 1.4rem;
+        }
+
+        p {
+            color: #c0c0c0;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #e94560;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #a0a0a0;
+        }
+
+        .contact-box {
+            background: rgba(233, 69, 96, 0.1);
+            border: 2px solid #e94560;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .contact-box h2 {
+            margin-top: 0;
+        }
+
+        .email-btn {
+            display: inline-block;
+            background: #e94560;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .email-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+            text-decoration: none;
+        }
+
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .info-card {
+            background: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .info-card-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .info-card h3 {
+            color: #e94560;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            font-size: 0.9rem;
+        }
+
+        /* App Selector */
+        .app-selector {
+            background: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .app-selector h3 {
+            color: #e94560;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .app-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .app-btn {
+            background: rgba(233, 69, 96, 0.2);
+            color: #ff6b6b;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .app-btn:hover, .app-btn.active {
+            background: #e94560;
+            color: #fff;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-top: 50px;
+        }
+
+        .faq-category {
+            margin-bottom: 30px;
+        }
+
+        .faq-category-title {
+            color: #ff6b6b;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .faq-item {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: rgba(255,255,255,0.08);
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px 20px;
+            color: #a0a0a0;
+        }
+
+        .faq-icon {
+            color: #e94560;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #a0a0a0;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <header>
+            <div class="logo">💬</div>
+            <h1>Support</h1>
+            <p>We're here to help!</p>
+        </header>
+
+        <main>
+            <div class="contact-box">
+                <h2>Contact Us</h2>
+                <p>Have a question, found a bug, or need help with any of our apps? Send us an email and we'll get back to you as soon as possible.</p>
+                <a href="mailto:purecodebase@gmail.com?subject=App%20Support%20Request" class="email-btn">
+                    Send Email
+                </a>
+                <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">purecodebase@gmail.com</p>
+            </div>
+
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-card-icon">⏱️</div>
+                    <h3>Response Time</h3>
+                    <p>We typically respond within 24-48 hours.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon">🌍</div>
+                    <h3>Languages</h3>
+                    <p>Support available in English and German.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon">🐛</div>
+                    <h3>Bug Reports</h3>
+                    <p>Please include app name, device model, and app version.</p>
+                </div>
+            </div>
+
+            <div class="app-selector">
+                <h3>Select Your App for Specific Help</h3>
+                <div class="app-buttons">
+                    <span class="app-btn active">🎲 Dice Tap Tower</span>
+                    <span class="app-btn">🚀 More Apps Coming Soon</span>
+                </div>
+            </div>
+
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-category">
+                    <h3 class="faq-category-title">General</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How do I restore my purchases?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Go to the in-game shop and tap "Restore Purchases" at the bottom. This will restore any previous purchases linked to your App Store or Google Play account. Make sure you're signed in with the same account you used for the original purchase.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>My game progress was lost. Can you recover it?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Unfortunately, game progress is stored locally on your device and cannot be recovered if lost. This can happen when you uninstall the app, reset your device, or clear app data. We recommend avoiding uninstalling apps if you want to keep your progress.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How do I request a refund?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Refunds are handled by the app store where you made the purchase:</p>
+                            <p><strong>Google Play:</strong> <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Request a refund</a></p>
+                            <p><strong>App Store:</strong> <a href="https://support.apple.com/en-us/HT204084" target="_blank">Request a refund</a></p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Why am I not seeing any ads?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ads require an internet connection to load. If you're connected but still not seeing ads, it could be due to your region, device settings, or temporary ad inventory issues. Try again later or check if you have any ad-blocking software enabled.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>The app is crashing. What should I do?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Try these steps:</p>
+                            <p>1. Make sure you have the latest version of the app<br>
+                            2. Restart your device<br>
+                            3. Ensure you have enough storage space<br>
+                            4. If the problem persists, contact us with your device model and app version</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3 class="faq-category-title">Dice Tap Tower</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What are the special dice types?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The game features 6 special dice:</p>
+                            <p><strong>Sticky:</strong> Adheres better to other dice<br>
+                            <strong>Light:</strong> Falls slower, easier to position<br>
+                            <strong>Magnet:</strong> Attracts nearby dice<br>
+                            <strong>Bomb:</strong> Explodes on impact, clearing dice<br>
+                            <strong>Heavy:</strong> More stable but harder to stack<br>
+                            <strong>Ghost:</strong> Passes through other dice briefly</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How does the fusion system work?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>When two identical dice touch, they fuse into a higher tier dice (Tier 1 → Tier 2 → Tier 3). Higher tier dice give more points. The maximum fusion tier is 3, which provides up to 375× point multiplier!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How do streaks and combos work?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Streaks:</strong> Successfully stack 5 dice in a row to activate a streak, giving you 2× points for the next 5 drops.</p>
+                            <p><strong>Combos:</strong> Land dice precisely for combo bonuses: GOOD (+10%), GREAT (+20%), AMAZING (+30%), INSANE (+50%).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Developer Information</h2>
+                <p><strong>Developer:</strong> PureCodeBase</p>
+                <p><strong>Owner:</strong> Nico Würthenberger</p>
+                <p><strong>Email:</strong> <a href="mailto:purecodebase@gmail.com">purecodebase@gmail.com</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
