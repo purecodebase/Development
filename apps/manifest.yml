@@ -1,0 +1,68 @@
+schema_version: 1
+
+source_repository: "https://github.com/purecodebase/Development"
+source_branch: "main"
+source_manifest_path: "apps/manifest.yml"
+pages_base_url: "https://purecodebase.github.io/Development"
+allowed_hosts:
+  - "purecodebase.github.io"
+
+# Der Schlüssel ist immer der Publisher-Slug. Der öffentliche Slug darf davon
+# abweichen und wird niemals automatisch geraten.
+apps:
+  beat-the-odds:
+    public_slug: "beat-the-odds"
+    source_path: "apps/beat-the-odds"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/beat-the-odds/"
+      support: "https://purecodebase.github.io/Development/apps/beat-the-odds/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/beat-the-odds/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/beat-the-odds/terms-of-service.html"
+      privacy_choices: "https://purecodebase.github.io/Development/apps/beat-the-odds/privacy-choices.html"
+
+  button-fortune-and-fallout:
+    public_slug: "button-fortune-fallout"
+    source_path: "apps/button-fortune-fallout"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/button-fortune-fallout/"
+      support: "https://purecodebase.github.io/Development/apps/button-fortune-fallout/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/button-fortune-fallout/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/button-fortune-fallout/terms-of-service.html"
+      privacy_choices: "https://purecodebase.github.io/Development/apps/button-fortune-fallout/privacy-choices.html"
+
+  dice-tap-tower:
+    public_slug: "dice-tap-tower"
+    source_path: "apps/dice-tap-tower"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/dice-tap-tower/"
+      support: "https://purecodebase.github.io/Development/apps/dice-tap-tower/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/dice-tap-tower/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/dice-tap-tower/terms-of-service.html"
+
+  qr-vault-offline:
+    public_slug: "qr-vault-offline"
+    source_path: "apps/qr-vault-offline"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/qr-vault-offline/"
+      support: "https://purecodebase.github.io/Development/apps/qr-vault-offline/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/qr-vault-offline/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/qr-vault-offline/terms-of-service.html"
+
+  two-worlds-infinity:
+    public_slug: "two-worlds-infinity"
+    source_path: "apps/two-worlds-infinity"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/two-worlds-infinity/"
+      support: "https://purecodebase.github.io/Development/apps/two-worlds-infinity/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/two-worlds-infinity/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/two-worlds-infinity/terms-of-service.html"
+
+  vibe-cards:
+    public_slug: "vibe-cards"
+    source_path: "apps/vibe-cards"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/vibe-cards/"
+      support: "https://purecodebase.github.io/Development/apps/vibe-cards/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/vibe-cards/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/vibe-cards/terms-of-service.html"
+      privacy_choices: "https://purecodebase.github.io/Development/apps/vibe-cards/privacy-choices.html"
