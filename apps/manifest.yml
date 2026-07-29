@@ -39,6 +39,16 @@ apps:
       privacy_policy: "https://purecodebase.github.io/Development/apps/dice-tap-tower/privacy-policy.html"
       terms: "https://purecodebase.github.io/Development/apps/dice-tap-tower/terms-of-service.html"
 
+  minimal-dungeon:
+    public_slug: "minimal-dungeon"
+    source_path: "apps/minimal-dungeon"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/minimal-dungeon/"
+      support: "https://purecodebase.github.io/Development/apps/minimal-dungeon/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/minimal-dungeon/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/minimal-dungeon/terms-of-service.html"
+      privacy_choices: "https://purecodebase.github.io/Development/apps/minimal-dungeon/privacy-choices.html"
+
   qr-vault-offline:
     public_slug: "qr-vault-offline"
     source_path: "apps/qr-vault-offline"
