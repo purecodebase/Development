@@ -49,6 +49,15 @@ apps:
       terms: "https://purecodebase.github.io/Development/apps/minimal-dungeon/terms-of-service.html"
       privacy_choices: "https://purecodebase.github.io/Development/apps/minimal-dungeon/privacy-choices.html"
 
+  app:
+    public_slug: "the-last-ember"
+    source_path: "apps/the-last-ember"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/the-last-ember/"
+      support: "https://purecodebase.github.io/Development/apps/the-last-ember/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/the-last-ember/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/the-last-ember/terms-of-service.html"
+
   qr-vault-offline:
     public_slug: "qr-vault-offline"
     source_path: "apps/qr-vault-offline"
