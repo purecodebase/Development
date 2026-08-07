@@ -39,6 +39,15 @@ apps:
       privacy_policy: "https://purecodebase.github.io/Development/apps/dice-tap-tower/privacy-policy.html"
       terms: "https://purecodebase.github.io/Development/apps/dice-tap-tower/terms-of-service.html"
 
+  drillbound:
+    public_slug: "drillbound"
+    source_path: "apps/drillbound"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/drillbound/"
+      support: "https://purecodebase.github.io/Development/apps/drillbound/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/drillbound/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/drillbound/terms-of-service.html"
+
   minimal-dungeon:
     public_slug: "minimal-dungeon"
     source_path: "apps/minimal-dungeon"
