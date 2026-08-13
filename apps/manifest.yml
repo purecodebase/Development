@@ -58,6 +58,15 @@ apps:
       terms: "https://purecodebase.github.io/Development/apps/minimal-dungeon/terms-of-service.html"
       privacy_choices: "https://purecodebase.github.io/Development/apps/minimal-dungeon/privacy-choices.html"
 
+  ai-game-prompter:
+    public_slug: "promptgames"
+    source_path: "apps/promptgames"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/promptgames/"
+      support: "https://purecodebase.github.io/Development/apps/promptgames/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/promptgames/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/promptgames/terms-of-service.html"
+
   app:
     public_slug: "the-last-ember"
     source_path: "apps/the-last-ember"
