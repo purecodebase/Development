@@ -29,4 +29,6 @@ support, privacy, terms, and app-specific legal pages through GitHub Pages.
   under `apps/<public-slug>/`.
 - Drillbound uses `apps/drillbound/` with an app landing page, privacy policy,
   support page, and terms of service; it is registered in `apps/manifest.yml`.
+- Otter Dive uses `apps/otter-dive/` with an app landing page, privacy policy,
+  support page, and terms of service; it is registered in `apps/manifest.yml`.
 - Publishing to GitHub Pages remains a separate external action.

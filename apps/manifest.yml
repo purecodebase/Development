@@ -48,6 +48,15 @@ apps:
       privacy_policy: "https://purecodebase.github.io/Development/apps/drillbound/privacy-policy.html"
       terms: "https://purecodebase.github.io/Development/apps/drillbound/terms-of-service.html"
 
+  otter-dive:
+    public_slug: "otter-dive"
+    source_path: "apps/otter-dive"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/otter-dive/"
+      support: "https://purecodebase.github.io/Development/apps/otter-dive/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/otter-dive/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/otter-dive/terms-of-service.html"
+
   minimal-dungeon:
     public_slug: "minimal-dungeon"
     source_path: "apps/minimal-dungeon"
