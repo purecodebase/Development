@@ -35,7 +35,7 @@
     <p class="meta">For: OddScene: Spot the Difference · Last updated: September 20, 2026</p>
 
     <div class="panel">
-        <p><strong>Current status:</strong> The current OddScene MVP does not use advertising, cross-app tracking, an analytics SDK, or an active consent provider. There is therefore no advertising-consent prompt or ATT permission flow to manage in the current build.</p>
+        <p><strong>Current status:</strong> The iOS release can use Google Mobile Ads and UMP consent for optional rewarded hints and interstitials. The app has no first-party analytics. UMP and App Tracking Transparency (ATT) choices can affect advertising and tracking availability.</p>
     </div>
 
     <h2>1. Local game data</h2>
@@ -43,13 +43,15 @@
 
     <h2>2. Tracking and advertising</h2>
     <ul>
-        <li>OddScene does not request App Tracking Transparency permission in the current MVP.</li>
-        <li>OddScene does not use cross-app tracking or personalized advertising in the current MVP.</li>
-        <li>No ad or consent SDK is active in the current MVP, so there are no in-app advertising choices to reopen.</li>
+        <li>UMP updates consent information before the app requests rewarded or interstitial ads. If UMP does not allow ad requests, the app does not load or show those ads.</li>
+        <li>Depending on region and consent, Google may serve personalized, non-personalized, or limited ads. Consent choices can be changed through the applicable UMP privacy form.</li>
+        <li>The app can request ATT before advertising. Denying ATT prevents the related tracking authorization; it does not automatically disable every ad request allowed by UMP.</li>
+        <li>Settings includes a PRIVACY OPTIONS entry when the advertising provider is available. The entry opens the provider&apos;s privacy choices form.</li>
     </ul>
 
-    <h2>3. Future optional services</h2>
-    <p>The project contains a platform-neutral boundary for a possible Full Version purchase and optional advertising in a later release. Those integrations are not active in the current MVP. If they are enabled, the in-app Settings flow and this page will be updated with the applicable consent, tracking, purchase, restore, and provider information before release.</p>
+    <h2>3. Purchases and local progress</h2>
+    <p>The optional Full Version is a one-time non-consumable purchase handled by Apple StoreKit 2. Apple controls payment and purchase processing. Restore uses Apple&apos;s transaction synchronization, while the verified entitlement is cached locally so the game can apply the purchase without an account.</p>
+    <p>Progress, scores, stars, tutorial state, selected scene, and accessibility or audio preferences stay in the local app container. They are not uploaded to a PureCodeBase server.</p>
 
     <h2>4. Requests</h2>
     <p>For a privacy question or rights request, email <a href="mailto:purecodebase@gmail.com?subject=OddScene%20Privacy%20Request">purecodebase@gmail.com</a>. Provider details are available in the <a href="../../impressum.html">Impressum</a>.</p>

@@ -43,31 +43,33 @@
     <p>Contact: <a href="mailto:purecodebase@gmail.com?subject=OddScene%20Privacy">purecodebase@gmail.com</a>. Provider details are available in the <a href="../../impressum.html">Impressum</a>.</p>
 
     <h2>2. Local game data</h2>
-    <p>OddScene stores the information needed to continue the game in the app&apos;s local container. This can include level completion, stars, scores, streaks, attempts, the last selected scene, first-run tutorial state, and local preferences such as Reduced Motion, haptics, and sound effects.</p>
-    <p>This data is not uploaded to a PureCodeBase server. OddScene has no account system, login, cloud save, or first-party online profile. Deleting the app or clearing its local data may permanently remove local progress.</p>
+    <p>OddScene stores the information needed to continue the game in the app&apos;s local container. This can include level completion, stars, scores, streaks, attempts, the last selected scene, first-run tutorial state, the cached Full Version entitlement, and local preferences such as Reduced Motion, haptics, and sound effects.</p>
+    <p>This game data is not uploaded to a PureCodeBase server. OddScene has no account system, login, cloud save, or developer-operated online profile. Deleting the app or clearing its local data may permanently remove local progress.</p>
 
-    <h2>3. Current MVP services and permissions</h2>
+    <h2>3. Current iOS services and permissions</h2>
     <div class="panel">
         <ul>
-            <li>The current MVP is designed for offline play and does not require a network connection or an account.</li>
-            <li>The current MVP does not include first-party analytics, advertising, crash-reporting, or an active third-party advertising SDK.</li>
-            <li>The current MVP does not request App Tracking Transparency permission and does not use cross-app tracking.</li>
-            <li>The current MVP does not require contacts, location, camera, microphone, or notification access.</li>
-            <li>Development hooks for a possible future StoreKit purchase or advertising integration are not live data-processing services in the current build.</li>
+            <li>Core gameplay and local progress work without a network connection or an account. Consent, advertising, and purchase or restore flows may require network access.</li>
+            <li>The iOS release includes Google Mobile Ads and Google User Messaging Platform (UMP) for optional rewarded hints, interstitials, consent, and privacy choices. The app does not use first-party analytics or crash-reporting.</li>
+            <li>UMP determines whether ads may be requested. Depending on region and the user&apos;s choices, Google may serve personalized, non-personalized, or limited ads.</li>
+            <li>The app can request App Tracking Transparency permission before advertising. If permission is denied, the app does not receive the related tracking authorization.</li>
+            <li>The Full Version is a one-time non-consumable purchase handled through Apple StoreKit 2. Apple processes payment and transaction data under Apple&apos;s terms and privacy policy; the app does not receive payment-card details.</li>
+            <li>The game does not request contacts, location, camera, microphone, photo library, or notification access.</li>
         </ul>
     </div>
 
-    <h2>4. Support messages</h2>
+    <h2>4. Advertising and third-party processing</h2>
+    <p>When the free iOS advertising path is available, Google Mobile Ads and UMP may process information needed to provide and measure ads, such as device or advertising identifiers, ad interactions, diagnostics, consent state, and related technical information. Google&apos;s processing is governed by Google&apos;s terms and privacy documentation. Consent choices and regional rules affect which processing and ad type are available.</p>
+    <p>OddScene does not upload local game progress, scores, or settings to PureCodeBase. StoreKit transactions are processed by Apple. Support messages are handled as described below.</p>
+
+    <h2>5. Support messages</h2>
     <p>If you email support or a privacy request, we receive your email address and the information you choose to include, such as your device model, iOS or iPadOS version, app version, a description, or screenshots. We use that information to answer the request, investigate the reported issue, and meet applicable legal obligations. We do not use support messages for advertising or profiling.</p>
 
-    <h2>5. Apple and future services</h2>
-    <p>Apple distributes the app through its platform and processes platform data under Apple&apos;s own terms and privacy policy. The current MVP does not complete live in-app purchases. If a later release enables a Full Version purchase, advertising, consent management, or another third-party service, this policy will be revised to identify the active provider, data categories, and available choices before that service is enabled for that release.</p>
-
     <h2>6. Retention and sharing</h2>
-    <p>Local game data remains on your device until you reset it, delete the app, or the platform removes it. Support correspondence is retained only as long as reasonably necessary to handle the request and comply with legal obligations. We do not sell personal information or share local game progress with third parties.</p>
+    <p>Local game data remains on your device until you reset it, delete the app, or the platform removes it. Google and Apple retain and process information according to their own policies and applicable settings. Support correspondence is retained only as long as reasonably necessary to handle the request and comply with legal obligations. We do not sell personal information or share local game progress with third parties.</p>
 
     <h2>7. Children</h2>
-    <p>OddScene is not intended to knowingly collect personal information from children. Because the current MVP does not require an account and does not include advertising or analytics, it does not intentionally request personal information from players.</p>
+    <p>OddScene is not directed to children and is not intended to knowingly collect personal information from children. Because the free iOS experience can include third-party advertising, parents and guardians should review the available UMP and ATT choices and platform settings before allowing use.</p>
 
     <h2>8. Your rights</h2>
     <p>Depending on your location, you may have rights to access, correct, delete, restrict, or object to the processing of personal information, and to withdraw consent where consent is the legal basis. Contact <a href="mailto:purecodebase@gmail.com?subject=OddScene%20Privacy%20Request">purecodebase@gmail.com</a> for a request. You may also contact the relevant supervisory authority.</p>
