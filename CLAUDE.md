@@ -31,4 +31,9 @@ support, privacy, terms, and app-specific legal pages through GitHub Pages.
   support page, and terms of service; it is registered in `apps/manifest.yml`.
 - Otter Dive uses `apps/otter-dive/` with an app landing page, privacy policy,
   support page, and terms of service; it is registered in `apps/manifest.yml`.
+- OddScene uses apps/oddscene/ with an app landing page, privacy policy,
+  privacy choices, support page, and terms of service; it is registered in
+  apps/manifest.yml. These pages describe the current offline MVP and must be
+  updated before any StoreKit, advertising, consent, or analytics provider is
+  enabled in a release.
 - Publishing to GitHub Pages remains a separate external action.

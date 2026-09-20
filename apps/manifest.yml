@@ -67,6 +67,16 @@ apps:
       terms: "https://purecodebase.github.io/Development/apps/minimal-dungeon/terms-of-service.html"
       privacy_choices: "https://purecodebase.github.io/Development/apps/minimal-dungeon/privacy-choices.html"
 
+  oddscene:
+    public_slug: "oddscene"
+    source_path: "apps/oddscene"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/oddscene/"
+      support: "https://purecodebase.github.io/Development/apps/oddscene/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/oddscene/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/oddscene/terms-of-service.html"
+      privacy_choices: "https://purecodebase.github.io/Development/apps/oddscene/privacy-choices.html"
+
   ai-game-prompter:
     public_slug: "promptgames"
     source_path: "apps/promptgames"
