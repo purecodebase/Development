@@ -122,3 +122,13 @@ apps:
       privacy_policy: "https://purecodebase.github.io/Development/apps/vibe-cards/privacy-policy.html"
       terms: "https://purecodebase.github.io/Development/apps/vibe-cards/terms-of-service.html"
       privacy_choices: "https://purecodebase.github.io/Development/apps/vibe-cards/privacy-choices.html"
+
+  echo-between-times:
+    public_slug: "echo-between-times"
+    source_path: "apps/echo-between-times"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/echo-between-times/"
+      support: "https://purecodebase.github.io/Development/apps/echo-between-times/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/echo-between-times/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/echo-between-times/terms-of-service.html"
+      privacy_choices: "https://purecodebase.github.io/Development/apps/echo-between-times/privacy-choices.html"

@@ -36,4 +36,9 @@ support, privacy, terms, and app-specific legal pages through GitHub Pages.
   apps/manifest.yml. These pages describe the current offline MVP and must be
   updated before any StoreKit, advertising, consent, or analytics provider is
   enabled in a release.
+- Echo Between Times uses apps/echo-between-times/ with an app landing page,
+  privacy policy, privacy choices, support page, and terms of service; it is
+  registered in apps/manifest.yml. The pages describe the iOS release with
+  Google Mobile Ads + UMP (interstitial and rewarded), ATT via the UMP IDFA
+  explainer, and the non-consumable Premium purchase (Unity IAP / StoreKit).
 - Publishing to GitHub Pages remains a separate external action.
