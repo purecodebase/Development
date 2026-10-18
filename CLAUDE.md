@@ -46,7 +46,7 @@ support, privacy, terms, and app-specific legal pages through GitHub Pages.
   registered in apps/manifest.yml. The pages describe the iOS release with
   Google Mobile Ads + UMP (interstitial and rewarded), ATT via the UMP IDFA
   explainer, and Unity IAP / StoreKit purchases (consumable gold packs and a
-  forge crate; non-consumable starter pack and Ad-Free Pass). The Ad-Free Pass
-  stops interstitials but the advertising SDK still starts; update the pages if
-  that changes.
+  forge crate; non-consumable starter pack and Ad-Free Pass). With the Ad-Free
+  Pass active the app starts neither Google Mobile Ads nor UMP at launch
+  (LineBreakers commit 1204ad9).
 - Publishing to GitHub Pages remains a separate external action.
