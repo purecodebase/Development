@@ -132,3 +132,13 @@ apps:
       privacy_policy: "https://purecodebase.github.io/Development/apps/echo-between-times/privacy-policy.html"
       terms: "https://purecodebase.github.io/Development/apps/echo-between-times/terms-of-service.html"
       privacy_choices: "https://purecodebase.github.io/Development/apps/echo-between-times/privacy-choices.html"
+
+  linebreakers:
+    public_slug: "linebreakers"
+    source_path: "apps/linebreakers"
+    urls:
+      marketing: "https://purecodebase.github.io/Development/apps/linebreakers/"
+      support: "https://purecodebase.github.io/Development/apps/linebreakers/support.html"
+      privacy_policy: "https://purecodebase.github.io/Development/apps/linebreakers/privacy-policy.html"
+      terms: "https://purecodebase.github.io/Development/apps/linebreakers/terms-of-service.html"
+      privacy_choices: "https://purecodebase.github.io/Development/apps/linebreakers/privacy-choices.html"

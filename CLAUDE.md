@@ -41,4 +41,12 @@ support, privacy, terms, and app-specific legal pages through GitHub Pages.
   registered in apps/manifest.yml. The pages describe the iOS release with
   Google Mobile Ads + UMP (interstitial and rewarded), ATT via the UMP IDFA
   explainer, and the non-consumable Premium purchase (Unity IAP / StoreKit).
+- LineBreakers uses apps/linebreakers/ with an app landing page, privacy
+  policy, privacy choices, support page, and terms of service; it is
+  registered in apps/manifest.yml. The pages describe the iOS release with
+  Google Mobile Ads + UMP (interstitial and rewarded), ATT via the UMP IDFA
+  explainer, and Unity IAP / StoreKit purchases (consumable gold packs and a
+  forge crate; non-consumable starter pack and Ad-Free Pass). The Ad-Free Pass
+  stops interstitials but the advertising SDK still starts; update the pages if
+  that changes.
 - Publishing to GitHub Pages remains a separate external action.
